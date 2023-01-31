@@ -1,11 +1,11 @@
-module "sandbox-aft" {
+module "sandbox-aft-new" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "ammargad+aft@amazon.com"
-    AccountName               = "sandbox-aft-new"
+    AccountEmail              = "ammargad+aft+2@amazon.com"
+    AccountName               = "sandbox-aft-new-2"
     ManagedOrganizationalUnit = "Management(ou-vpar-q5ph7h75)"
-    SSOUserEmail              = "ammargad+aft@amazon.com"
+    SSOUserEmail              = "ammargad+aft+2@amazon.com"
     SSOUserFirstName          = "Sandbox"
     SSOUserLastName           = "AFT"
   }
@@ -23,5 +23,5 @@ module "sandbox-aft" {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "sandbox-new"
 }
